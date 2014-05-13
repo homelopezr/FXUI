@@ -59,7 +59,7 @@ public class RunScreens extends Application {
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("stylefx.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("Style_FX.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setTitle("Firma Digital.");
         primaryStage.show();
