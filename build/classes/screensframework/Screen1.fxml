@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-preview-i18n-resource bundle.es.properties?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen1Controller">
+<children><BorderPane fx:id="borderPane" layoutX="40.0" layoutY="36.0" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<top><Label fx:id="lblTitulo" styleClass="titulo" text="Firmado digital de Documentos." BorderPane.alignment="CENTER">
+<font>
+<Font name="Arial Narrow" size="32.0" />
+</font>
+<padding>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</padding>
+<BorderPane.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</BorderPane.margin></Label>
+</top>
+<bottom><HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="fondo" BorderPane.alignment="CENTER">
+<children><Button fx:id="btnConfig" minHeight="35.0" minWidth="100.0" mnemonicParsing="false" onAction="#actionConfig" text="%fxmain.button.config">
+<HBox.margin>
+<Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+</HBox.margin>
+<tooltip><Tooltip text="Empty Tooltip" />
+</tooltip></Button><Button fx:id="btnprivado" minHeight="35.0" minWidth="80.0" mnemonicParsing="false" onAction="#actionPrivados" text="%fxmain.button.pri">
+<HBox.margin>
+<Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+</HBox.margin>
+<tooltip><Tooltip text="Empty Tooltip" />
+</tooltip></Button><Button fx:id="btnPublico" minHeight="35.0" minWidth="80.0" mnemonicParsing="false" onAction="#actionPublicos" text="%fxmain.button.pub">
+<HBox.margin>
+<Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+</HBox.margin>
+<tooltip><Tooltip text="Empty Tooltip" />
+</tooltip></Button><Button fx:id="btnSalir" cancelButton="true" minHeight="35.0" minWidth="80.0" mnemonicParsing="false" onAction="#actionSalir" text="%fxmain.button.close">
+<HBox.margin>
+<Insets bottom="15.0" left="30.0" top="15.0" />
+</HBox.margin>
+<tooltip><Tooltip text="Empty Tooltip" />
+</tooltip></Button>
+</children>
+<BorderPane.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</BorderPane.margin></HBox>
+</bottom>
+<right><VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="fondo" BorderPane.alignment="CENTER">
+<children><Button id="btnfirmar" fx:id="btnFirmar" defaultButton="true" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" onAction="#actionFirmar" styleClass="button1,buttonText" text="%fxmain.button.firmar">
+<VBox.margin>
+<Insets bottom="10.0" top="10.0" />
+</VBox.margin>
+<tooltip><Tooltip text="Empty Tooltip" />
+</tooltip></Button><Button id="btnverificar" fx:id="btnVerificar" mnemonicParsing="false" onAction="#actionVerificar" prefHeight="60.0" prefWidth="120.0" styleClass="button2,buttonText" text="%fxmain.button.verificar">
+<VBox.margin>
+<Insets bottom="10.0" top="10.0" />
+</VBox.margin>
+<tooltip><Tooltip text="Empty Tooltip" />
+</tooltip></Button>
+</children>
+<BorderPane.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</BorderPane.margin></VBox>
+</right>
+<center><VBox prefHeight="200.0" prefWidth="100.0" styleClass="fondo" BorderPane.alignment="CENTER">
+<children><HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="fondo">
+<children><Label prefWidth="65.0" styleClass="labelsub" text="%fxmain.label.lb1">
+<padding>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</padding>
+<HBox.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</HBox.margin></Label><TextField fx:id="tfArchivo" editable="false" prefHeight="30.0" prefWidth="280.0" styleClass="textfield">
+<HBox.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</HBox.margin>
+<tooltip><Tooltip text="%fxmain.tip.text1" />
+</tooltip></TextField><Button fx:id="btnBusca1" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#actionBusca1" styleClass="buttonText" text="...">
+<tooltip><Tooltip text="%fxmain.tip.b1" />
+</tooltip></Button>
+</children></HBox><HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="fondo">
+<children><Label prefWidth="65.0" styleClass="labelsub" text="%fxmain.label.lb2">
+<padding>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</padding>
+<HBox.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</HBox.margin></Label><TextField fx:id="tfFirma" editable="false" prefHeight="30.0" prefWidth="280.0" styleClass="textfield">
+<HBox.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</HBox.margin>
+<tooltip><Tooltip text="%fxmain.tip.text2" />
+</tooltip></TextField><Button fx:id="btnBusca2" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#actionBusca2" styleClass="buttonText" text="...">
+<tooltip><Tooltip text="%fxmain.tip.b2" />
+</tooltip></Button>
+</children></HBox><HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="fondo">
+<children><Label prefWidth="65.0" styleClass="labelsub" text="%fxmain.label.lb3">
+<padding>
+<Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+</padding>
+<HBox.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</HBox.margin></Label><TextField fx:id="tfFirmante" editable="false" prefHeight="30.0" prefWidth="280.0" styleClass="textfield">
+<HBox.margin>
+<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+</HBox.margin>
+<tooltip><Tooltip text="%fxmain.tip.text3" />
+</tooltip></TextField><Button fx:id="btnBusca3" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#actionBusca3" styleClass="buttonText" text="...">
+<tooltip><Tooltip text="%fxmain.tip.b3" />
+</tooltip></Button>
+</children></HBox>
+</children></VBox>
+</center></BorderPane>
+</children></AnchorPane>
